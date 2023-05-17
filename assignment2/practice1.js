@@ -5,7 +5,7 @@ const fruits = ["pineapple", "guava", "banana", "orange", "grapes"];
 console.log(fruits);
 
 //practice1-3
-fruits.splice(2, 0, "durian");
+fruits[2] = "durian";
 console.log(fruits);
 
 //practice1-4
@@ -28,7 +28,22 @@ const squared = numbers.map((element, index, originalArray) => {
 });
 console.log(squared);
 
-//practice1-8
+//practice1-8（還是不會）
+const isPrime = (numbers) => {
+  if (numbers <= 1) return false;
+  for (let i = 2; i < numbers; i++) {
+    if (numbers % i === 0) {
+      return false;
+    }
+  }
+  return true;
+};
+
+const newNumbers = numbers.filter((numbers) => {
+  return isPrime(numbers) ? false : true;
+});
+
+console.log(newNumbers);
 
 //practice1-9
 const sum = numbers.reduce((accumulator, element, index, originalArray) => {
