@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <style>
+      .sug-container{
+        background-color: rgb(220, 222, 128);
+        width:50%;
+        height:500px;
+        border-radius: 10px;
+        
+      }
+      .sug-title,.pre-title{
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+      }
+      .title-container{
+        margin-top: 20px;
+      }
+      .btn{
+        width:100px;
+        height:50px;
+        border-radius: 10px;
+        background-color: grey;
+        color: aliceblue;
+        font-size: large;
+        cursor: pointer;
+        
+      }
+      .btn-container{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .sug{
+        background-color: aliceblue;
+        width:200px;
+        height:100px;
+        display: flex;
+        justify-content: center;
+        color: black;
+        border-radius: 10px;
+        padding: 10px;
+      }
+      .block,.input-container{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .predict-container{
+        background-color: rgb(144, 222, 231);
+        width:50%;
+        height:500px;
+        border-radius: 10px;
+      }
+      .container{
+        display: flex;
+      }
+      .input{
+        width:200px;
+        height:30px;
+      }
+      .age{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        font-size: large;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      
+      <div class="sug-container">
+        
+        <div class="title-container">
+          <div class="sug-title">Suggestion</div>
+        </div>
+        
+        <div class="block">
+          <div class="sug"></div>
+        </div>
+        
+        <div class="btn-container">
+          <button class="btn" onClick="suggestion()">Confirm</button>
+        </div>
+        
+      </div>
+      
+      <div class="predict-container">
+        <div class="title-container">
+          <div class="pre-title">Predict Age</div>
+        </div>
+        <div class="input-container">
+          <input type="text" class="input" placeholder="Name">
+        </div>
+        <div class="btn-container">
+          <button class="btn" onClick="predict()" ">Enter</button>
+        </div>
+        <div class="age">
+          你的年齡為
+        </div>
+      </div>
+    </div>
+    
+    <script src="./practice2.js"></script>
+  </body>
+</html>
