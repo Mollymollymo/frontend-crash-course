@@ -13,14 +13,18 @@ suggestion();
 
 const predict = () => {
   const name = document.querySelector(".input").value;
-
-  const url = "https://api.agify.io/?name=danny";
+  console.log(name);
+  const url = "https://api.agify.io/?name=" + name;
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      const number = data.activity;
-      const age = document.querySelector(".age");
-      age.texContent = number;
+      console.log(data);
+      const { age } = data;
+      const ageNode = document.querySelector(".age");
+      ageNode.textContent = age;
+      //const number = data.age;
+      //const age = document.querySelector(".age");
+      //age.texContent = number;
     });
 };
 predict();
