@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <style>
+      .container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .start,.pause,.reset{
+        background-color: bisque;
+        width:100px;
+        height:100px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: large;
+        margin-right: 20px;
+      }
+      .inputContainer,.buttonContainer{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .input{
+        width:100px;
+        height:100px;
+        border-radius: 8px;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"> 
+      <div class="inputContainer">
+        <input class="input" type="text">
+      </div>
+      <div class="buttonContainer">
+        <button class="start">START</button>
+        <button class="pause">PAUSE</button>
+        <button class="reset">RESET</button>
+      </div>
+    </div>
+    <script src="./index.html"></script>
+  </body>
+</html>

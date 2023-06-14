@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <style>
+      .container{
+        background-color: pink;
+        width:100%;
+        height:100%;
+        margin:0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .title{
+        font-size: 70px;
+      }
+      .input{
+        width:250px;
+        height:30px;
+        border-radius: 8px;
+      }
+      .todoContainer{
+        width:400px;
+        height:500px;
+        background-color: rgb(231, 231, 231);
+        margin-top: 20px;
+        border-radius: 8px;
+        
+      }
+      .todoList{
+        display:flex;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+      .add,.done,.cancel{
+        cursor: pointer;
+        
+      }
+      .done,.cancel{
+        width:50px;
+        height:30px;
+        margin-right: 10px;
+      }
+      .buttonContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        
+      }
+      .item{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title-container">
+        <div class="title">Todo List</div>
+      </div>
+      <div class="input-container">
+        <input class="input" type="text">
+        <button class="add" onClick="add()">+</button>
+      </div>
+      <div class="todoContainer">
+        <div class="todoList">
+          <div class="todoItem"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
