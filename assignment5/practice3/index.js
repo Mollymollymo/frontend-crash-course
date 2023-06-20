@@ -1,19 +1,32 @@
-"use strict";
+let countdown;
 
-const count=()=>{
-  const now=document.querySelector(".input").value;
-  const startButton=document.querySelector(".start");
-  startButton.addEventListener("click",start);
-  const num;
+const startButton = document.querySelector(".start");
+const start = () => {
+  let currentCount = document.querySelector(".input").value;
+  countdown = setInterval(() => {
+    if (currentCount !== 0) {
+      currentCount = currentCount - 1;
+      document.querySelector(".input").value = currentCount;
+    }
+    if (currentCount == 0) {
+      clearInterval(countdown);
+    }
+  }, 1000);
+};
+startButton.addEventListener("click", start);
 
-  const start =(now)=>{
-    const counter=setInterval(()=>{
-      if(now!==0){
-        now=now-1;
-        num.textContent=now;
-      }if(num==0){
-        clearInterval(num);
-      }
-    },1000)
+const pauseButton = document.querySelector(".pause");
+const pause = () => {
+  clearInterval(countdown);
+};
+pauseButton.addEventListener("click", pause);
+
+const resetButton = document.querySelector(".reset");
+const reset = () => {
+  let currentCount = document.querySelector(".input").value;
+  if (currentCount !== 0) {
+    currentCount = 0;
+    document.querySelector(".input").value = currentCount;
   }
-}
+};
+resetButton.addEventListener("click", reset);
