@@ -1,0 +1,325 @@
+<html>
+  <head>
+    <style>
+      * {
+    box-sizing: border-box;
+}
+    .fullpage{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 100px;
+      flex-direction: column;
+    }
+    .navbar{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    padding: 8px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    }
+
+    .nav-title{
+      display:flex;
+
+    }
+
+    .logo{
+      font-size: 20px;
+      font-family: Apple Chancery, cursive;
+    }
+
+    .item-container{
+      display: flex;
+      color:grey;
+      margin-left:10px;
+    }
+
+    .item{
+      margin-left: 10px;
+    }
+
+    .menu-container{
+      display: flex;
+    }
+
+    .hamburger{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .line{
+      background-color: black;
+      height: 2px;
+      width:20px;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 4px;
+    }
+
+    .cart,.log-in,.hamburger{
+      margin-right: 20px;
+    }
+
+    .header-container{
+      background-color: rgb(163, 236, 216);
+      border-radius: 50px;
+      height:400px;
+      width:1000px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .header-title{
+      color: black;
+      font-size: 50px;
+      font-weight: 900;
+    }
+
+    .data-line{
+      background-color: grey;
+      width:2px;
+      height:60px;
+    }
+
+    .data{
+      display:flex;
+      justify-content: space-between;
+
+    }
+
+    .header-picture{
+      padding: 80px;
+    }
+
+    .species-data,.customers-data{
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .header{
+      padding: 60px;
+    }
+    .search{
+      width:100%;
+      height:40px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    .best-selling-container{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 100px;
+    }
+    .best-picture,.category-picture{
+      display: flex;
+      justify-content:space-between;
+      
+    }
+
+    .picture{
+      border-radius: 20px;
+      margin-left: 40px;
+    }
+
+    .best-title,.about-title,.category-title{
+      color: black;
+      font-size: 30px;
+      font-weight: 700;
+    }
+    .best-header{
+      margin-right: 10px;
+    }
+    .best-content,.about-content,.types-content,.ship-content,.support-content,.category-content{
+      color: gray;
+      font-size: 15px;
+      margin-top: 10px;
+    }
+    .see-more-btn{
+      background-color: rgb(163, 236, 216);
+      border-radius: 10px;
+      width:150px;
+      height:40px;
+      margin-top: 10px;
+      border: grey;
+    }
+    .about-header,.category-header{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    .category-header{
+      margin-bottom: 30px;
+    }
+    .about-container,.category-container{
+      display: flex;
+      justify-content: center;
+      margin-top: 100px;
+      flex-direction: column;
+    }
+    .icon{
+      border-radius: 50%;
+    }
+    .about{
+      display: flex;
+      justify-content: space-between;
+      
+      align-items: center;
+      padding: 30px;
+    }
+    .types,.ship,.support{
+      margin-right: 30px;
+    }
+    .types-title,.ship-title,.support-title{
+      margin-top: 20px;
+      font-size: large;
+      font-weight: bold;
+    }
+    .category-picture{
+      background-color: rgb(163, 236, 216);
+      width: 100%;
+      height:500px;
+      border-radius:50px ;
+    }
+    .nature-pic,.acc-pic,.artificial-pic{
+      border-radius: 20px;
+      margin-left: 40px;
+      margin-top: 20px;
+    }
+    .nature,.accessory,.artificial,.category-bottom,.natural-plants,.artificial-plants,.foliage-plants{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    </style>
+    
+
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="nav-title">
+        <div class="logo">GREENMIND</div>
+        <div class="item-container">
+          <div class="item">Home</div>
+          <div class="item">Products</div>
+          <div class="item">Contact</div>
+        </div>
+      </div>
+      <div class="menu-container">
+        <img class="cart" src="https://img.tukuppt.com/png_preview/00/12/44/tfAnF8RDfG.jpg!/fw/780" width="25">
+        <img class="log-in" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiZkhL_k02COebipM8eqMtgZB8XxJ8rFfrDA&usqp=CAU" width="25">
+        <div class="hamburger" >
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+    <div class="fullpage">
+      <div class="header-container">
+        <div class="header">
+          <div class="header-title">Buy your <br/> dream plants</div>
+          <div class="data">
+            <div class="species-container">
+              <div class="species-data">50+</div>
+              <div class="species">Plant Species</div>
+            </div>
+            <div class="data-line"></div>
+            <div class="customers-container">
+              <div class="customers-data">100+</div>
+              <div class="customers">Customers</div>
+            </div>
+          </div>
+          <input class="search" placeholder="  What are you looking for?">
+        </div>
+        <div class="header-picture">
+          <img class="picture" src="https://imgs.cwgv.com.tw/pic/2020-07-07-1594114190.jpg" width="200" >
+        </div>
+      </div>
+      <div class="best-selling-container">
+        <div class="best-header">
+          <div class="best-title">
+            Best Selling <br/> Plants
+          </div>
+        <div class="best-content">
+          Easiest way to <br/> healthy life by buying <br/> your favorite plants
+        </div>
+        <button class="see-more-btn">See more</button>
+        </div>
+        <div class="best-picture">
+          <div class="natural-plants">
+            <img class="picture" src="https://imgs.cwgv.com.tw/pic/2020-07-07-1594113921.jpg" width="200">
+            <div class="natural-title">Natural Plants</div> 
+            <div class="natural-price">$1,400</div>
+          </div>
+          <div class="artificial-plants">
+            <img class="picture" src="https://imgs.cwgv.com.tw/pic/2020-07-07-1594113614.jpg" width="200">
+            <div class="artificial-title">Artificial Plants</div>
+            <div class="artificial-price">$900</div>
+          </div>
+          <div class="foliage-plants">
+            <img class="picture" src="https://img.ltwebstatic.com/images3_pi/2023/03/07/167815620759cbfe4ff079c2ba5a806866cf259426.webp" width="190">
+            <div class="floiage-title">Floiage Plants</div>
+            <div class="floiage-price">$3,500</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-container">
+        <div class="about-header">
+          <div class="about-title">About us</div>
+          <div class="about-content">Order now and appreciate the beauty of nature</div>
+        </div>
+        <div class="about">
+          <div class="types">
+            <img class="icon" src="https://is2-ssl.mzstatic.com/image/thumb/Purple69/v4/b7/84/13/b784133d-9ab4-c07c-870a-5441d1722e3c/source/512x512bb.jpg" width="60">
+            <div class="types-title">Large Assortment</div>
+            <div class="types-content">we offer many different types of products<br/> with fewer variations in each category</div>
+          </div>
+          <div class="ship">
+            <img class="icon" src="https://www.pngkey.com/png/detail/781-7817829_icon-shipping-delivery.png" width="50">
+            <div class="ship-title">Fast & Free Shipping</div>
+            <div class="ship-content">4-day or delivery time,free shipping <br/> and an expedited delivery option.</div>
+          </div>
+          <div class="support">
+            <img class="icon" src="https://cdn.pixabay.com/photo/2014/04/02/11/16/phone-305741_1280.png" width="50">
+            <div class="support-title">24/7 Support</div>
+            <div class="support-content">answers to any business related inquiry<br/> 24/7 and in real-time.</div>
+          </div>
+        </div>
+      </div>
+      <div class="category-container">
+        <div class="category-header">
+          <div class="category-title">Categories</div>
+          <div class="category-content">Find what you are looking for</div>
+        </div>
+        <div class="category-picture">
+          <div class="nature">
+            <img class="nature-pic" src="https://img.ltn.com.tw/Upload/news/600/2017/04/05/2026548_2.jpg" width="250">
+            <div class="title">Natural Plants</div>
+          </div>
+          <div class="accessory">
+            <img class="acc-pic" src="https://unidaydesign.sharkcdn.io/blog/30a37b76b0ed191a85e2f3972d07b2b0e9c09d1b.jpg" width="230">
+            <div class="title">Plant Accessories</div>
+          </div>
+          <div class="artificial">
+            <img class="artificial-pic" src="https://cdn.shopify.com/s/files/1/0108/9460/6436/products/artificial-64-travelers-palm-tree-uv-resistant-indooroutdoor-nearly-natural-473310.jpg?v=1624645835&width=1500" width="260">
+            <div class="title">Artificial</div>
+          </div>
+          <div class="category-bottom">
+            <div class="category-item">Horem ipsum dolor sit amet,<br/> consectetur adipiscing elit.</div>
+            <button class="Explore">Explore</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
